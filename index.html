@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $("#card1 img").mouseenter(
+            function(){
+            $("#ct1, #cd1").stop().show("slow");
+        }
+        );
+        $("#card1 img").mouseleave(
+        function(){
+            $("#ct1, #cd1").stop().hide("slow");
+        }
+        );
+    });
+
+    $(document).ready(function(){
+        $("#card2 img").mouseover(
+            function(){
+            $("#ct2, #cd2").stop().show("slow");
+        }
+        );
+        $("#card2 img").mouseout(
+        function(){
+            $("#ct2, #cd2").stop().hide("slow");
+        }
+        );
+    });
+
+    $(document).ready(function(){
+        $("#card3 img").mouseover(
+            function(){
+            $("#ct3, #cd3").stop().show("slow");
+        }
+        );
+        $("#card3 img").mouseout(
+        function(){
+            $("#ct3, #cd3").stop().hide("slow");
+        }
+        );
+    });
+
+    $(document).ready(function(){
+    $("#checkbox").click(function(){
+    $(".content").slideToggle("slow");
+  });
+});
+    </script>
+
+    <title>Tugas Besar 2</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <div class="judul"> <h1>Let's Eat!</h1> </div>
+         <div class="menu">
+                    <label for="checkbox" class="hamburger">
+                        <input type="checkbox" id="checkbox">
+                        <span class="line line-main"></span>
+                        <span class="line line-split"></span>
+                    </label>
+                </div>
+                <div class="content-container">
+                <div class="content" id="c1">
+                    <div id="panel"> <a href="https://ukinon.github.io/TugasBesarWebDasar/index.html#slc" target="_blank"><div class="button"> Street </div></a></div>
+                </div>
+                <div class="content" id="c2">
+                    <div id="panel"> <a href="https://ukinon.github.io/TugasBesarWebDasar/index.html#slc" target="_blank"><div class="button"> Family </div></a></div>
+                </div>
+                <div class="content" id="c3">
+                    <div id="panel"> <a href="https://ukinon.github.io/TugasBesarWebDasar/index.html#slc" target="_blank"><div class="button"> Cafe </div></a></div>
+                </div>
+            </div>
+            </nav>
+       </div>
+
+       <div class="main">
+        <div class="cover">
+            <h1> Rekomendasi Tempat Kuliner di Jabodetabek</h1> 
+        </div>
+        <div class="span">
+            <div class="card" id="card1">
+            <img src="assets/index/coffee.jpg">
+            <h3 class="card-title" id="ct1"> Coffee </h3>
+            <p class="card-desc" id="cd1"> Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="card" id="card2">
+                <img src="assets/index/eat.jpg">
+                <h3 class="card-title" id="ct2"> Family </h3>
+            <p class="card-desc" id="cd2"> Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="card" id="card3">
+            <img src="assets/index/street.jpg">
+            <h3 class="card-title" id="ct3"> Street </h3>
+            <p class="card-desc" id="cd3"> Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+       </div>
+
+       <div class="footer">
+        papappapapappapap
+       </div>
+</body>
+</html>

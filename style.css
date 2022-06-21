@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@100;200;300;400;500;700;900&display=swap');
+
+:root{
+    --background: #fec7d7;
+    --headline: #33272a;
+    --text: #594a4e;
+    accent-color: #ff8ba7;
+    --button: #33272a;
+    --button-text: #faeee7;
+    --primary:#d9d4e7;
+    --secondary:#a786df;
+}
+
+h1 h2 h3{
+    color: var(--headline);
+}
+p{
+    color: var(--text);
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'google sans';
+    scroll-behavior: smooth;
+}
+
+body{
+background-color: var(--background);
+}
+.cover{
+    background: url("assets/index/Main.jpg");
+    padding:200px;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(70%);
+}
+
+.cover h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--button-text);
+}
+.span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+.span img{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    border: #33272a;
+    border-style: solid;
+}
+.span img:hover{
+    transform: scale(130%);
+    transition: 0.5s ease;
+    filter: brightness(30%);
+    position: relative;
+}
+
+.card h3, p{
+display: none;
+justify-content: center;
+transform: translate(0, -150px);
+color: var(--primary);
+z-index: 99;
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    .cover h1{
+    padding: 50px;
+    backdrop-filter: blur(14px) saturate(171%);
+    -webkit-backdrop-filter: blur(14px) saturate(171%);
+    background-color: rgba(17, 25, 40, 0.71);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.span{
+    display: flex;
+    flex-flow:row ;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.span img{
+    display: inline-flex;
+    width: 300px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 20px;
+    border: #33272a;
+    border-style: solid;
+}
+
+.span img:hover{
+    transform: scale(130%);
+    transition: 0.5s ease;
+    filter: brightness(30%);
+    position: relative;
+}
+.card1 h3 p{
+    display: flex; 
+    top: 5px; 
+    left: 0; 
+    width: 100%; 
+ }
+
+  }

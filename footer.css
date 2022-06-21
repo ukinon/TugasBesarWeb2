@@ -1,0 +1,18 @@
+:root{
+    --background: #fec7d7;
+    --headline: #33272a;
+    --text: #594a4e;
+    accent-color: #ff8ba7;
+    --button: #33272a;
+    --button-text: #faeee7;
+    --primary:#d9d4e7;
+    --secondary:#ff8baf;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+    background-color: var(--headline);
+    color: var(--button-text);
+}
