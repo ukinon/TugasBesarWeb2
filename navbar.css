@@ -1,3 +1,14 @@
+:root{
+    --background: #fec7d7;
+    --headline: #33272a;
+    --text: #594a4e;
+    accent-color: #ff8ba7;
+    --button: #33272a;
+    --button-text: #faeee7;
+    --primary:#d9d4e7;
+    --secondary:#a786df;
+}
+
 .header{
     background-color: var(--primary);
     border: var(--button);
@@ -94,13 +105,17 @@
     border-radius: 25px;
     border-width: 2px;
     margin-bottom: 20px;
+    transition: 0.5s ease;
 }
 
 a{
     text-decoration: none;
     color: var(--headline);
 }
-
+.content:hover{
+    background-color:var(--background) ;
+    transition: 0.5s ease;
+}
 @media screen 
   and (min-device-width: 1200px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
