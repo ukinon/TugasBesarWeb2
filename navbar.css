@@ -105,7 +105,6 @@
     border-radius: 25px;
     border-width: 2px;
     margin-bottom: 20px;
-    transition: 0.5s ease;
 }
 
 a{
@@ -128,7 +127,9 @@ a{
     padding: 20px;
     margin-top: -5px;
 }
-
+.content{
+    transition: 0.5s ease;
+}
 .menu{
     display: none;
 }
