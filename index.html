@@ -17,7 +17,7 @@
             $("#ct1, #cd1").stop().show("slow");
         }
         );
-        $("#card1 img").mouseleave(
+        $("#card1").mouseleave(
         function(){
             $("#ct1, #cd1").stop().hide("slow");
         }
@@ -25,12 +25,12 @@
     });
 
     $(document).ready(function(){
-        $("#card2 img").mouseover(
+        $("#card2").mouseover(
             function(){
             $("#ct2, #cd2").stop().show("slow");
         }
         );
-        $("#card2 img").mouseout(
+        $("#card2").mouseout(
         function(){
             $("#ct2, #cd2").stop().hide("slow");
         }
@@ -38,12 +38,12 @@
     });
 
     $(document).ready(function(){
-        $("#card3 img").mouseover(
+        $("#card3").mouseover(
             function(){
             $("#ct3, #cd3").stop().show("slow");
         }
         );
-        $("#card3 img").mouseout(
+        $("#card3").mouseout(
         function(){
             $("#ct3, #cd3").stop().hide("slow");
         }
@@ -91,18 +91,25 @@
         <div class="span">
             <div class="card" id="card1">
             <img src="assets/index/coffee.jpg">
+            <div>
             <h3 class="card-title" id="ct1"> Coffee </h3>
             <p class="card-desc" id="cd1"> Lorem ipsum dolor sit amet</p>
+        </div>
+        </label>
             </div>
             <div class="card" id="card2">
                 <img src="assets/index/eat.jpg">
+                <div>
                 <h3 class="card-title" id="ct2"> Family </h3>
             <p class="card-desc" id="cd2"> Lorem ipsum dolor sit amet</p>
+        </div>
             </div>
             <div class="card" id="card3">
             <img src="assets/index/street.jpg">
+            <div>
             <h3 class="card-title" id="ct3"> Street </h3>
             <p class="card-desc" id="cd3"> Lorem ipsum dolor sit amet</p>
+        </div>
         </div>
     </div>
        </div>

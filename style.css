@@ -58,19 +58,19 @@ background-color: var(--background);
     border-radius: 20px;
     border: #33272a;
     border-style: solid;
+    transition: 0.5s ease;
 }
-.span img:hover{
+.card:hover img{
     transform: scale(130%);
     transition: 0.5s ease;
-    filter: brightness(30%);
     position: relative;
+    filter: brightness(30%);
 }
 
-.card h3, p{
+.card div h3, p{
 display: none;
-justify-content: center;
-transform: translate(0, -150px);
-color: var(--primary);
+transform: translate(35px, -150px);
+color: var(--button-text);
 z-index: 99;
 }
 
@@ -104,13 +104,15 @@ z-index: 99;
     border-style: solid;
 }
 
-.span img:hover{
+
+.card:hover img{
     transform: scale(130%);
     transition: 0.5s ease;
-    filter: brightness(30%);
     position: relative;
+    filter: brightness(30%);
 }
-.card1 h3 p{
+
+.card1 div{
     display: flex; 
     top: 5px; 
     left: 0; 
