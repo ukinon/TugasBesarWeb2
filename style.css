@@ -21,17 +21,16 @@ p{
 *{
     padding: 0;
     margin:0;
-    box-sizing: border-box;
     font-family: 'google sans';
     scroll-behavior: smooth;
 }
 
 body{
-background-color: var(--background);
+background-image: linear-gradient(to right,#DD5E89, #f7bb97);
 }
 .cover{
     background: url("assets/index/Main.jpg");
-    padding:200px 0 200px 0;
+    padding:200px;
     background-position: center;
     background-size: cover;
     filter: brightness(70%);
@@ -59,26 +58,13 @@ background-color: var(--background);
     border: #33272a;
     border-style: solid;
     transition: 0.5s ease;
-}
-.card:hover img{
-    transform: scale(130%);
-    transition: 0.5s ease;
-    position: relative;
     filter: brightness(30%);
 }
 
 .card div h3, p{
-display: none;
 transform: translate(35px, -150px);
 color: var(--button-text);
 z-index: 99;
-}
-
-.card:hover div h3{
-    transform: translate(0px, -150px);
-}
-.card:hover div p{
-    transform: translate(0px, -150px);
 }
 
 @media screen 
@@ -109,6 +95,7 @@ z-index: 99;
     border-radius: 20px;
     border: #33272a;
     border-style: solid;
+    filter: none;
 }
 
 
@@ -119,11 +106,18 @@ z-index: 99;
     filter: brightness(30%);
 }
 
-.card1 div{
-    display: flex; 
-    top: 5px; 
-    left: 0; 
-    width: 100%; 
- }
+.card div h3, p{
+display: none;
+transform: translate(35px, -150px);
+color: var(--button-text);
+z-index: 99;
+}
+
+.card:hover div h3{
+    transform: translate(0px, -150px);
+}
+.card:hover div p{
+    transform: translate(0px, -150px);
+}
 
   }

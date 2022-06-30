@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $("#card1 img").mouseenter(
+            function(){
+            $("#ct1, #cd1").stop().show("slow");
+        }
+        );
+        $("#card1").mouseleave(
+        function(){
+            $("#ct1, #cd1").stop().hide("slow");
+        }
+        );
+    });
+
+    $(document).ready(function(){
+        $("#card2").mouseenter(
+            function(){
+            $("#ct2, #cd2").stop().show("slow");
+        }
+        );
+        $("#card2").mouseleave(
+        function(){
+            $("#ct2, #cd2").stop().hide("slow");
+        }
+        );
+    });
+
+    $(document).ready(function(){
+        $("#card3").mouseenter(
+            function(){
+            $("#ct3, #cd3").stop().show("slow");
+        }
+        );
+        $("#card3").mouseleave(
+        function(){
+            $("#ct3, #cd3").stop().hide("slow");
+        }
+        );
+    });
+
+    $(document).ready(function(){
+    $("#checkbox").click(function(){
+    $(".content").slideToggle("slow");
+  });
+});
+    </script>
+
+<style>
+    #c2{
+        background-color: var(--background);
+    }
+</style>
+
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <div class="judul"> <h1>Let's Eat!</h1> </div>
+         <div class="menu">
+                    <label for="checkbox" class="hamburger">
+                        <input type="checkbox" id="checkbox">
+                        <span class="line line-main"></span>
+                        <span class="line line-split"></span>
+                    </label>
+                </div>
+                <div class="content-container">
+                <div class="content" id="c1">
+                    <div id="panel"> <a href="food.html"><div class="button"> Street </div></a></div>
+                </div>
+                <div class="content" id="c2">
+                    <div id="panel"> <a href="family.html"><div class="button"> Family </div></a></div>
+                </div>
+                <div class="content" id="c3">
+                    <div id="panel"> <a href="coffee.html"><div class="button"> Cafe </div></a></div>
+                </div>
+                <div class="content" id="c4">
+                    <div id="panel"> <a href="index.html" "><div class="button"> Home </div></a></div>
+                </div>
+            </div>
+           
+            </nav>
+       </div>
+<div class="main">
+
+</div>
+       <div class="footer">
+        <div class="icons">
+            <a href="https://www.instagram.com/arfianojordhy/" class="icon icon--instagram" target="_blank">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://www.twitter.com/ukinoshitty" class="icon icon--twitter" target="_blank">
+              <i class="ri-twitter-line"></i>
+            </a>
+            <a href="https://wa.me/6289696078486" class="icon icon--whatsapp" target="_blank">
+              <i class="ri-whatsapp-line"></i>
+            </a>
+            <a href="https://github.com/ukinon" class="icon icon--github" target="_blank">
+              <i class="ri-github-line"></i>
+            </a>
+          </div>
+       </div>
+</body>
+</html>

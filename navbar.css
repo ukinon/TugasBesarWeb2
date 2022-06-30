@@ -146,12 +146,18 @@ a{
     display: inline-block;
     position: absolute;
     top: 5px;
-    right: 108px;
+    right: 109px;
 }
 #c3{
     display: inline-block;
     position: absolute;
     top: 5px;
     right: 205px;
+}
+#c4{
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 290px;
 }
   }

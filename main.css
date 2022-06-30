@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@100;200;300;400;500;700;900&display=swap');
+
+:root{
+    --background: #fec7d7;
+    --headline: #33272a;
+    --text: #594a4e;
+    accent-color: #ff8ba7;
+    --button: #33272a;
+    --button-text: #faeee7;
+    --primary:#d9d4e7;
+    --secondary:#a786df;
+}
+
+h1 h2 h3{
+    color: var(--headline);
+}
+p{
+    color: var(--text);
+}
+
+*{
+    font-family: 'google sans';
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+background-image: linear-gradient(to right,#DD5E89, #f7bb97);
+}
+
+.main{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+padding: 200px;
+}
+
+.main-content{
+    display: flex;
+    justify-content: left;
+    background-color: var(--primary);
+    padding: 10%;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+    margin: 5px;
+}
