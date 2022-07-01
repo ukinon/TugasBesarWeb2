@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
@@ -42,7 +41,27 @@
             </nav>
        </div>
 <div class="main">
-
+    <form action="" id="myform">
+        <div class="form-content">
+        <div id="reserve-date">
+          <div>
+            <label for="date">Tanggal : </label>
+            <input type="date" name="date" id="date" required>
+          </div>
+        </div>
+        <label for="nama">Nama : </label>
+        <input type="text" name="nama" id="nama" required>
+        <label for="kontak">Kontak : </label>
+        <input type="number" name="phone" id="phone" required>
+        <label for="customer">Untuk Berapa Orang?</label>
+        <input type="number" name="customer" id="customer" required>
+        <label for="total"> Total Harga : </label>
+        <input type="number" name="total" id="total" required>
+        <div class="reservation-btn">
+                <button  class="reserve" id="btn1"> Reserve! </button>
+        </div>
+    </div>
+      </form>
 </div>
        <div class="footer">
         <div class="icons">
@@ -60,5 +79,6 @@
             </a>
           </div>
        </div>
+       <script src="script.js"></script>
 </body>
 </html>

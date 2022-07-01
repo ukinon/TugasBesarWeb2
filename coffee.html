@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <script>
@@ -23,6 +22,35 @@
 
 </head>
 <body>
+    <div id="popup">
+        <div id="backbtn">
+            <button> <h1>  X </h1> </button> 
+        </div>
+        <div class="popup-content">
+            <form action="" id="myform">
+                <div class="form-content">
+                <div id="reserve-date">
+                  <div>
+                    <label for="date">Tanggal : </label>
+                    <input type="date" name="date" id="date" required>
+                  </div>
+                </div>
+                <label for="nama">Nama : </label>
+                <input type="text" name="nama" id="nama" required>
+                <label for="kontak">Kontak : </label>
+                <input type="number" name="phone" id="phone" required>
+                <label for="customer">Untuk Berapa Orang?</label>
+                <input type="number" name="customer" id="customer" required>
+                <label for="total"> Total Harga : </label>
+                <input type="number" name="total" id="total" required>
+                <div class="reservation-btn">
+                        <input type="submit" name="Reserve!" class="reserve">
+                </div>
+            </div>
+              </form>
+            </div>
+        </div>
+  
     <div class="header">
         <nav>
             <div class="judul"> <h1>Let's Eat!</h1> </div>
@@ -65,9 +93,7 @@
                 <p> Harga Reservasi: Rp50.000 per orang </p> 
             </div>
             <div class="reservation-btn">
-            <a href="receipt.html">
-                <button class="reserve" id="btn1"> Reserve! </button>
-            </a>
+                <button onclick = "changeHarga()" class="reserve" id="btn1"> Reserve! </button>
         </div>
         </div>
     </div>
@@ -85,7 +111,7 @@
             </div>
             <div class="reservation-btn">
             <a href="receipt.html">
-                <button class="reserve" id="btn1"> Reserve! </button>
+                <button class="reserve" id="btn2"> Reserve! </button>
             </a>
         </div>
         </div>
@@ -104,7 +130,7 @@
             </div>
             <div class="reservation-btn">
             <a href="receipt.html">
-                <button class="reserve" id="btn1"> Reserve! </button>
+                <button class="reserve" id="btn3"> Reserve! </button>
             </a>
         </div>
         </div>
@@ -112,18 +138,18 @@
     <div class="main-content" id="tangerang">
         <h2> Tangerang </h2>
         <div id="images">
-            <img id="img10" src="assets/coffee/jakarta/mayhaps.jpg">
-            <img id="img11" src="assets/coffee/jakarta/maple oak.jpg">
-            <img id="img12" src="assets/coffee/jakarta/coffee aya.jpg">
+            <img id="img10" src="assets/coffee/tangerang/afterfriday.png">
+            <img id="img11" src="assets/coffee/tangerang/afterfriday2.jpg">
+            <img id="img12" src="assets/coffee/tangerang/afterfriday3.jpg">
         </div>
         <div id="image-desc">
             <div id="des1">
-                <h4> MayHaps </h4>
-                <p> Harga Reservasi: Rp50.000 per orang </p> 
+                <h4> Afterfriday </h4>
+                <p> Harga Reservasi: Rp40.000 per orang </p> 
             </div>
             <div class="reservation-btn">
             <a href="receipt.html">
-                <button class="reserve" id="btn1"> Reserve! </button>
+                <button class="reserve" id="btn4"> Reserve! </button>
             </a>
         </div>
         </div>
@@ -131,18 +157,18 @@
     <div class="main-content" id="bekasi">
         <h2> Bekasi </h2>
         <div id="images">
-            <img id="img13" src="assets/coffee/jakarta/mayhaps.jpg">
-            <img id="img14" src="assets/coffee/jakarta/maple oak.jpg">
-            <img id="img15" src="assets/coffee/jakarta/coffee aya.jpg">
+            <img id="img13" src="assets/coffee/bekasi/Little-Talk-Coffee.jpg">
+            <img id="img14" src="assets/coffee/bekasi/littletalk2.jpg">
+            <img id="img15" src="assets/coffee/bekasi/littletalk3.jpg">
         </div>
         <div id="image-desc">
             <div id="des1">
-                <h4> MayHaps </h4>
-                <p> Harga Reservasi: Rp50.000 per orang </p> 
+                <h4> Little Talk </h4>
+                <p> Harga Reservasi: Rp40.000 per orang </p> 
             </div>
             <div class="reservation-btn">
             <a href="receipt.html">
-                <button class="reserve" id="btn1"> Reserve! </button>
+                <button class="reserve" id="btn5"> Reserve! </button>
             </a>
         </div>
         </div>
@@ -165,5 +191,6 @@
             </a>
           </div>
        </div>
+       <script src="script.js"></script>
 </body>
 </html>

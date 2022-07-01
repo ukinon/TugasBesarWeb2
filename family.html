@@ -5,58 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <script>
-    $(document).ready(function(){
-        $("#card1 img").mouseenter(
-            function(){
-            $("#ct1, #cd1").stop().show("slow");
-        }
-        );
-        $("#card1").mouseleave(
-        function(){
-            $("#ct1, #cd1").stop().hide("slow");
-        }
-        );
-    });
-
-    $(document).ready(function(){
-        $("#card2").mouseenter(
-            function(){
-            $("#ct2, #cd2").stop().show("slow");
-        }
-        );
-        $("#card2").mouseleave(
-        function(){
-            $("#ct2, #cd2").stop().hide("slow");
-        }
-        );
-    });
-
-    $(document).ready(function(){
-        $("#card3").mouseenter(
-            function(){
-            $("#ct3, #cd3").stop().show("slow");
-        }
-        );
-        $("#card3").mouseleave(
-        function(){
-            $("#ct3, #cd3").stop().hide("slow");
-        }
-        );
-    });
-
-    $(document).ready(function(){
-    $("#checkbox").click(function(){
-    $(".content").slideToggle("slow");
-  });
-});
     </script>
 
 <style>
@@ -79,23 +35,119 @@
                 </div>
                 <div class="content-container">
                 <div class="content" id="c1">
-                    <div id="panel"> <a href="food.html"><div class="button"> Street </div></a></div>
+                    <div id="panel"> <a href="food.html" "><div class="button"> Street </div></a></div>
                 </div>
                 <div class="content" id="c2">
-                    <div id="panel"> <a href="family.html"><div class="button"> Family </div></a></div>
+                    <div id="panel"> <a href="family.html" "><div class="button"> Family </div></a></div>
                 </div>
                 <div class="content" id="c3">
-                    <div id="panel"> <a href="coffee.html"><div class="button"> Cafe </div></a></div>
+                    <div id="panel"> <a href="coffee.html" "><div class="button"> Cafe </div></a></div>
                 </div>
                 <div class="content" id="c4">
                     <div id="panel"> <a href="index.html" "><div class="button"> Home </div></a></div>
                 </div>
             </div>
-           
             </nav>
        </div>
-<div class="main">
 
+<div class="main">
+<div class="container">
+    <div class="main-content" id="jakarta">
+        <h2> Jakarta </h2>
+        <div id="images">
+            <img id="img1" src="assets/coffee/jakarta/mayhaps.jpg">
+            <img id="img2" src="assets/coffee/jakarta/maple oak.jpg">
+            <img id="img3" src="assets/coffee/jakarta/coffee aya.jpg">
+        </div>
+        <div id="image-desc">
+            <div id="des1">
+                <h4> MayHaps </h4>
+                <p> Harga Reservasi: Rp50.000 per orang </p> 
+            </div>
+            <div class="reservation-btn">
+            <a href="receipt.html">
+                <button class="reserve" id="btn1"> Reserve! </button>
+            </a>
+        </div>
+        </div>
+    </div>
+    <div class="main-content" id="bogor">
+        <h2> Bogor </h2>
+        <div id="images">
+            <img id="img4" src="assets/coffee/bogor/Koba.jpg">
+            <img id="img5" src="assets/coffee/bogor/Koba2.jpg">
+            <img id="img6" src="assets/coffee/bogor/Koba3.jpg">
+        </div>
+        <div id="image-desc">
+            <div id="des1">
+                <h4> Koba </h4>
+                <p> Harga Reservasi: Rp50.000 per orang </p> 
+            </div>
+            <div class="reservation-btn">
+            <a href="receipt.html">
+                <button class="reserve" id="btn1"> Reserve! </button>
+            </a>
+        </div>
+        </div>
+    </div>
+    <div class="main-content" id="depok">
+        <h2> Depok </h2>
+        <div id="images">
+            <img id="img7" src="assets/coffee/depok/walkingdrums.jpg">
+            <img id="img8" src="assets/coffee/depok/nako.jpg">
+            <img id="img9" src="assets/coffee/depok/beranda.jpg">
+        </div>
+        <div id="image-desc">
+            <div id="des1">
+                <h4> The Walking Drums </h4>
+                <p> Harga Reservasi: Rp30.000 per orang </p> 
+            </div>
+            <div class="reservation-btn">
+            <a href="receipt.html">
+                <button class="reserve" id="btn1"> Reserve! </button>
+            </a>
+        </div>
+        </div>
+    </div>
+    <div class="main-content" id="tangerang">
+        <h2> Tangerang </h2>
+        <div id="images">
+            <img id="img10" src="assets/coffee/tangerang/afterfriday.png">
+            <img id="img11" src="assets/coffee/tangerang/afterfriday2.jpg">
+            <img id="img12" src="assets/coffee/tangerang/afterfriday3.jpg">
+        </div>
+        <div id="image-desc">
+            <div id="des1">
+                <h4> Afterfriday </h4>
+                <p> Harga Reservasi: Rp40.000 per orang </p> 
+            </div>
+            <div class="reservation-btn">
+            <a href="receipt.html">
+                <button class="reserve" id="btn1"> Reserve! </button>
+            </a>
+        </div>
+        </div>
+    </div>
+    <div class="main-content" id="bekasi">
+        <h2> Bekasi </h2>
+        <div id="images">
+            <img id="img13" src="assets/coffee/bekasi/Little-Talk-Coffee.jpg">
+            <img id="img14" src="assets/coffee/bekasi/littletalk2.jpg">
+            <img id="img15" src="assets/coffee/bekasi/littletalk3.jpg">
+        </div>
+        <div id="image-desc">
+            <div id="des1">
+                <h4> Little Talk </h4>
+                <p> Harga Reservasi: Rp40.000 per orang </p> 
+            </div>
+            <div class="reservation-btn">
+            <a href="receipt.html">
+                <button class="reserve" id="btn1"> Reserve! </button>
+            </a>
+        </div>
+        </div>
+    </div>  
+</div>
 </div>
        <div class="footer">
         <div class="icons">

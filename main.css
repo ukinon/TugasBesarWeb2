@@ -73,6 +73,7 @@ background-image: linear-gradient(to right,#DD5E89, #f7bb97);
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s;
+    border: #33272a solid;
 }
 #images img:hover{
     flex: 50;
@@ -92,9 +93,74 @@ background-image: linear-gradient(to right,#DD5E89, #f7bb97);
     align-items: center;
 }
 .reserve{
-
+    background-color: var(--button);
+    color: var(--button-text);
     padding: 10px 100px 10px 100px;
     border-radius: 25px;
     margin: 20px 0px -50px 0px;
     cursor: pointer;
 }
+
+.reserve:hover{
+    filter:invert();
+    transition: 0.2s all;
+}
+.reserve:active{
+    filter: grayscale();
+}
+
+.form-content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 50px;
+background-color: var(--primary);
+border-radius: 25px;
+border: #33272a solid;
+}
+
+.form-content > *{
+    margin: 10px 10px 10px;
+    font-size: 1rem;
+}
+
+input{
+    border-radius: 25px;
+}
+
+select{
+    border-radius: 25px;
+}
+
+#reserve-date {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #popup {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    transform: translateY(50px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+#popup-content{
+transform: translateX(-10px);
+}
+
+#backbtn{
+    display: flex;
+    justify-content: center;
+}
+  #backbtn button{
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    background-color: var(--primary);
+    border: #33272a solid;
+    width: 40px;
+    transform: translateX(-10px);
+  }
