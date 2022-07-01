@@ -31,18 +31,70 @@ background-image: linear-gradient(to right,#DD5E89, #f7bb97);
 
 .main{
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-padding: 200px;
+    justify-content: center;
+    padding: 130px 0 130px 0;
+}
+
+.container{
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap
 }
 
 .main-content{
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    flex-direction: column;
     background-color: var(--primary);
-    padding: 10%;
     border-width: 2px;
     border-style: solid;
     border-radius: 25px;
-    margin: 5px;
+    margin: 10px;
+    padding: 50px;
+}
+
+.main-content h3{
+    margin: -10px 0 10px 0;
+}
+
+#images{
+    display: flex;
+    gap: 5px;
+    width: 20vw;
+    height: 50vmin;
+    margin: 20px;
+}
+#images img{
+    border-radius: 25px;
+    height: 100%;
+    flex: 1;
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#images img:hover{
+    flex: 50;
+}
+
+#image-desc{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.reservation-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reserve{
+
+    padding: 10px 100px 10px 100px;
+    border-radius: 25px;
+    margin: 20px 0px -50px 0px;
+    cursor: pointer;
 }
