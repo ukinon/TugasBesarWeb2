@@ -101,6 +101,15 @@ background-image: linear-gradient(to right,#DD5E89, #f7bb97);
     cursor: pointer;
 }
 
+#submit-btn{
+        background-color: var(--button);
+        color: var(--button-text);
+        padding: 10px 100px 10px 100px;
+        border-radius: 25px;
+        margin: 20px 0px -50px 0px;
+        cursor: pointer;
+}
+
 .reserve:hover{
     filter:invert();
     transition: 0.2s all;
@@ -149,10 +158,36 @@ select{
     justify-content: center;
     align-items: center;
   }
+
+  #thankyou {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    transform: translateY(50px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  #thankyou-box{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: var(--primary);
+    border-radius: 25px;
+  }
 #popup-content{
 transform: translateX(-10px);
 }
-
+.thankyou-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-10px); 
+    font-size: 2em;
+}
 #backbtn{
     display: flex;
     justify-content: center;

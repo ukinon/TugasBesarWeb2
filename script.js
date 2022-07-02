@@ -12,18 +12,36 @@ function changeHarga(){
     });
   };
 
-
     $(document).ready(function (){
         $("#backbtn").click(function () {
           $("#popup").fadeOut();
-        });
+        });     
+      });
+      $(document).ready(function (){
+        $("#thankyou").click(function () {
+          $("#thankyou").fadeOut();
+        });     
       });
 
-let form = document.querySelector("button.reserve");
-form.addEventListener('click',function(event){
+document.querySelectorAll(".reserve").forEach( reserve => reserve.addEventListener("click", (event) => {
   event.preventDefault();
-  
   $(document).ready(function(){
     $("#popup").fadeIn().css("display","flex")
   });
+}));
+
+let form = document.getElementById("myform");
+form.addEventListener('submit',function(event){
+  event.preventDefault();
+  $(document).ready(function(){
+    $("#thankyou").fadeIn().css("display","flex")
+  });
+  $(document).ready(function(){
+    $("#popup").fadeOut()
+  });
+  form.reset();
 });
+
+total.onkeypress=function(ev){
+  ev.preventDefault();
+};
