@@ -9,20 +9,49 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <script>
     </script>
 
 <style>
-    #c1{
+    #c3{
         background-color: var(--background);
     }
 </style>
 
 </head>
 <body>
+    <div id="popup">
+        <div id="backbtn">
+            <button> <h1>  X </h1> </button> 
+        </div>
+        <div class="popup-content">
+            <form action="" id="myform">
+                <div class="form-content">
+                <div id="reserve-date">
+                  <div>
+                    <label for="date">Tanggal : </label>
+                    <input type="date" name="date" id="date" required>
+                  </div>
+                </div>
+                <label for="nama">Nama : </label>
+                <input type="text" name="nama" id="nama" required>
+                <label for="kontak">Kontak : </label>
+                <input type="number" name="phone" id="phone" required>
+                <label for="customer">Untuk Berapa Orang?</label>
+                <input type="number" min="0" oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" name="customer" id="customer" required>
+                <label for="total"> Total Harga : </label>
+                <input type="number" min="0" name="total" id="total" required>
+                <div class="reservation-btn">
+                    <input type="submit" value="Reserve!" id="submit-btn">
+                </div>
+            </div>
+              </form>
+            </div>
+        </div>
+  
     <div class="header">
         <nav>
             <div class="judul"> <h1>Let's Eat!</h1> </div>
@@ -65,9 +94,7 @@
                 <p> Harga Reservasi: Rp50.000 per orang </p> 
             </div>
             <div class="reservation-btn">
-            <a href="receipt.html">
-                <button class="reserve" id="btn1"> Reserve! </button>
-            </a>
+                <button onclick = "changeHarga()" class="reserve" id="btn1"> Reserve! </button>
         </div>
         </div>
     </div>
@@ -84,9 +111,9 @@
                 <p> Harga Reservasi: Rp50.000 per orang </p> 
             </div>
             <div class="reservation-btn">
-            <a href="receipt.html">
-                <button class="reserve" id="btn1"> Reserve! </button>
-            </a>
+
+                <button class="reserve" id="btn2"> Reserve! </button>
+    
         </div>
         </div>
     </div>
@@ -103,9 +130,9 @@
                 <p> Harga Reservasi: Rp30.000 per orang </p> 
             </div>
             <div class="reservation-btn">
-            <a href="receipt.html">
-                <button class="reserve" id="btn1"> Reserve! </button>
-            </a>
+
+                <button class="reserve" id="btn3"> Reserve! </button>
+
         </div>
         </div>
     </div>
@@ -122,9 +149,9 @@
                 <p> Harga Reservasi: Rp40.000 per orang </p> 
             </div>
             <div class="reservation-btn">
-            <a href="receipt.html">
-                <button class="reserve" id="btn1"> Reserve! </button>
-            </a>
+
+                <button class="reserve" id="btn4"> Reserve! </button>
+
         </div>
         </div>
     </div>
@@ -141,9 +168,9 @@
                 <p> Harga Reservasi: Rp40.000 per orang </p> 
             </div>
             <div class="reservation-btn">
-            <a href="receipt.html">
-                <button class="reserve" id="btn1"> Reserve! </button>
-            </a>
+
+                <button class="reserve" id="btn5"> Reserve! </button>
+
         </div>
         </div>
     </div>  
@@ -165,5 +192,15 @@
             </a>
           </div>
        </div>
+
+       <div id="thankyou">
+        <div id="thankyou-box">
+        <div class="thankyou-content">
+            <h3> Thank You!</h3>
+            <p>Your Order Has Been Reserved!</p> 
+            </div>
+        </div>
+    </div>
+       <script src="script.js"></script>
 </body>
 </html>
