@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cafe</title>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="main.css">
@@ -24,33 +24,34 @@
 <body>
     <div id="popup">
         <div id="backbtn">
-            <button> <h1>  X </h1> </button> 
+            <button> <h1>  X </h1> </button>
         </div>
         <div class="popup-content">
             <form action="" id="myform">
                 <div class="form-content">
-                <div id="reserve-date">
-                  <div>
-                    <label for="date">Tanggal : </label>
-                    <input type="date" name="date" id="date" required>
-                  </div>
-                </div>
-                <label for="nama">Nama : </label>
-                <input type="text" name="nama" id="nama" required>
-                <label for="kontak">Kontak : </label>
-                <input type="number" name="phone" id="phone" required>
-                <label for="customer">Untuk Berapa Orang?</label>
-                <input type="number" min="0" oninput="this.value = 
+                    <div id="reserve-date">
+                        <div>
+                            <label for="date">Date </label>
+                            <input type="date" name="date" id="date" required>
+                        </div>
+                    </div>
+                    <label for="nama"> Name: </label>
+                    <input type="text" name="nama" id="nama" required>
+                    <label for="kontak">Contact: </label>
+                    <input type="number" name="phone" id="phone" required>
+                    <label for="customer">Number of People: </label>
+                    <input type="number" min="0" oninput="this.value = 
                 !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" name="customer" id="customer" required>
-                <label for="total"> Total Harga : </label>
-                <input type="number" min="0" name="total" id="total" required>
-                <div class="reservation-btn">
-                    <input type="submit" value="Reserve!" id="submit-btn">
+                    <label for="total"> Total: </label>
+                    <input type="number" min="0" name="total" id="total" required>
+                    <div class="reservation-btn">
+                        <input type="submit" value="Reserve!" id="submit-btn">
+                    </div>
                 </div>
-            </div>
-              </form>
-            </div>
+            </form>
         </div>
+    </div>
+
   
     <div class="header">
         <nav>
@@ -94,7 +95,7 @@
                 <p> Harga Reservasi: Rp50.000 per orang </p> 
             </div>
             <div class="reservation-btn">
-                <button onclick = "changeHarga()" class="reserve" id="btn1"> Reserve! </button>
+                <button onclick = "changeHarga50()" class="reserve" id="btn1"> Reserve! </button>
         </div>
         </div>
     </div>
@@ -131,7 +132,7 @@
             </div>
             <div class="reservation-btn">
 
-                <button class="reserve" id="btn3"> Reserve! </button>
+                <button onclick = "changeHarga30()"class="reserve" id="btn3"> Reserve! </button>
 
         </div>
         </div>
@@ -150,8 +151,7 @@
             </div>
             <div class="reservation-btn">
 
-                <button class="reserve" id="btn4"> Reserve! </button>
-
+                <button onclick = "changeHarga40() "class="reserve" id="btn4"> Reserve! </button>
         </div>
         </div>
     </div>
@@ -169,7 +169,7 @@
             </div>
             <div class="reservation-btn">
 
-                <button class="reserve" id="btn5"> Reserve! </button>
+                <button onclick = "changeHarga40()"class="reserve" id="btn5"> Reserve! </button>
 
         </div>
         </div>

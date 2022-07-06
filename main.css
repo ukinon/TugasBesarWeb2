@@ -1,48 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@100;200;300;400;500;700;900&display=swap');
-
-:root{
+:root {
     --background: #fec7d7;
     --headline: #33272a;
     --text: #594a4e;
     accent-color: #ff8ba7;
     --button: #33272a;
     --button-text: #faeee7;
-    --primary:#d9d4e7;
-    --secondary:#a786df;
+    --primary: #d9d4e7;
+    --secondary: #a786df;
 }
 
-h1 h2 h3{
+h1 h2 h3 {
     color: var(--headline);
 }
-p{
+
+p {
     color: var(--text);
 }
 
-*{
+* {
     font-family: 'google sans';
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
 }
 
-body{
-background-image: linear-gradient(to right,#DD5E89, #f7bb97);
+body {
+    background-image: linear-gradient(to right, #DD5E89, #f7bb97);
 }
 
-.main{
+.main {
     display: flex;
     justify-content: center;
     padding: 130px 0 130px 0;
 }
 
-.container{
-   display: flex;
-   justify-content: center;
-   flex-direction: row;
-   flex-wrap: wrap
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap
 }
 
-.main-content{
+.main-content {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -54,99 +54,123 @@ background-image: linear-gradient(to right,#DD5E89, #f7bb97);
     padding: 50px;
 }
 
-.main-content h3{
+.main-content h3 {
     margin: -10px 0 10px 0;
 }
 
-#images{
+#images {
     display: flex;
+    justify-content: center;
     gap: 5px;
-    width: 20vw;
-    height: 50vmin;
+    width: 30vw;
+    height: 55vmin;
     margin: 20px;
+    transform: translateX(30px);
 }
-#images img{
+
+#images img {
+    display: flex;
+    justify-content: center;
     border-radius: 25px;
     height: 100%;
-    flex: 1;
+    flex: 5;
     object-fit: cover;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s;
     border: #33272a solid;
 }
-#images img:hover{
+
+#images img:hover {
     flex: 50;
 }
 
-#image-desc{
+#image-desc {
     margin: 20px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     justify-content: flex-start;
+    font-size: 1.5rem;
 }
 
-
-.reservation-btn{
+.reservation-btn {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-.reserve{
+
+.reserve {
     background-color: var(--button);
     color: var(--button-text);
-    padding: 10px 100px 10px 100px;
+    padding: 10px 200px 10px 200px;
     border-radius: 25px;
     margin: 20px 0px -50px 0px;
     cursor: pointer;
-}
-
-#submit-btn{
-        background-color: var(--button);
-        color: var(--button-text);
-        padding: 10px 100px 10px 100px;
-        border-radius: 25px;
-        margin: 20px 0px -50px 0px;
-        cursor: pointer;
-}
-
-.reserve:hover{
-    filter:invert();
-    transition: 0.2s all;
-}
-.reserve:active{
-    filter: grayscale();
-}
-
-.form-content{
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 50px;
-background-color: var(--primary);
-border-radius: 25px;
-border: #33272a solid;
-}
-
-.form-content > *{
-    margin: 10px 10px 10px;
     font-size: 1rem;
 }
 
-input{
+.angkringan {
+    background-color: var(--button);
+    color: var(--button-text);
+    padding: 10px 200px 10px 200px;
+    border-radius: 25px;
+    margin: 20px 0px -50px 0px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.angkringan:hover {
+    filter: invert();
+    transition: 0.2s all;
+}
+
+.angkringan:active {
+    filter: grayscale();
+}
+
+.reserve:hover {
+    filter: invert();
+    transition: 0.2s all;
+}
+
+.reserve:active {
+    filter: grayscale();
+}
+
+/*form*/
+#popup-content {
+    transform: translateX(-10px);
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    background-color: var(--primary);
+    border-radius: 25px;
+    border: #33272a solid;
+}
+
+.form-content>* {       
+    margin: 10px 10px 10px;
+    font-size: 1.3rem;
+}
+
+input {
     border-radius: 25px;
 }
 
-select{
+select {
     border-radius: 25px;
 }
 
 #reserve-date {
     display: flex;
     justify-content: flex-start;
-  }
+}
 
-  #popup {
+#popup {
     position: fixed;
     top: 0;
     width: 100%;
@@ -157,9 +181,33 @@ select{
     display: none;
     justify-content: center;
     align-items: center;
-  }
+}
+#backbtn {
+    display: flex;
+    justify-content: center;
+}
+#backbtn button:hover{
+    cursor: pointer;
+}
 
-  #thankyou {
+#backbtn button {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    background-color: var(--primary);
+    border: #33272a solid;
+    width: 40px;
+    transform: translateX(-10px);
+}
+#submit-btn {
+    background-color: var(--button);
+    color: var(--button-text);
+    padding: 10px 100px 10px 100px;
+    border-radius: 25px;
+    margin: 20px 0px -50px 0px;
+    cursor: pointer;
+}
+
+/*thankyou*/
+#thankyou {
     position: fixed;
     top: 0;
     width: 100%;
@@ -170,32 +218,20 @@ select{
     display: none;
     justify-content: center;
     align-items: center;
-  }
-  #thankyou-box{
+}
+
+.thankyou-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-10px);
+    font-size: 2rem;
+}
+
+#thankyou-box {
     display: flex;
     justify-content: center;
     padding: 50px;
     background-color: var(--primary);
     border-radius: 25px;
-  }
-#popup-content{
-transform: translateX(-10px);
 }
-.thankyou-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transform: translateX(-10px); 
-    font-size: 2em;
-}
-#backbtn{
-    display: flex;
-    justify-content: center;
-}
-  #backbtn button{
-    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
-    background-color: var(--primary);
-    border: #33272a solid;
-    width: 40px;
-    transform: translateX(-10px);
-  }

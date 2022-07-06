@@ -1,206 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Family</title>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+
     <script>
     </script>
 
-<style>
-    #c3{
-        background-color: var(--background);
-    }
-</style>
+    <style>
+        #c2 {
+            background-color: var(--background);
+        }
+    </style>
 
 </head>
+
 <body>
     <div id="popup">
         <div id="backbtn">
-            <button> <h1>  X </h1> </button> 
+            <button> <h1>  X </h1> </button>
         </div>
         <div class="popup-content">
             <form action="" id="myform">
                 <div class="form-content">
-                <div id="reserve-date">
-                  <div>
-                    <label for="date">Tanggal : </label>
-                    <input type="date" name="date" id="date" required>
-                  </div>
-                </div>
-                <label for="nama">Nama : </label>
-                <input type="text" name="nama" id="nama" required>
-                <label for="kontak">Kontak : </label>
-                <input type="number" name="phone" id="phone" required>
-                <label for="customer">Untuk Berapa Orang?</label>
-                <input type="number" min="0" oninput="this.value = 
+                    <div id="reserve-date">
+                        <div>
+                            <label for="date">Date </label>
+                            <input type="date" name="date" id="date" required>
+                        </div>
+                    </div>
+                    <label for="nama"> Name: </label>
+                    <input type="text" name="nama" id="nama" required>
+                    <label for="kontak">Contact: </label>
+                    <input type="number" name="phone" id="phone" required>
+                    <label for="customer">Number of People: </label>
+                    <input type="number" min="0" oninput="this.value = 
                 !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" name="customer" id="customer" required>
-                <label for="total"> Total Harga : </label>
-                <input type="number" min="0" name="total" id="total" required>
-                <div class="reservation-btn">
-                    <input type="submit" value="Reserve!" id="submit-btn">
+                    <label for="total"> Total: </label>
+                    <input type="number" min="0" name="total" id="total" required>
+                    <div class="reservation-btn">
+                        <input type="submit" value="Reserve!" id="submit-btn">
+                    </div>
                 </div>
-            </div>
-              </form>
-            </div>
+            </form>
         </div>
-  
+    </div>
+
     <div class="header">
         <nav>
-            <div class="judul"> <h1>Let's Eat!</h1> </div>
-         <div class="menu">
-                    <label for="checkbox" class="hamburger">
+            <div class="judul">
+                <h1>Let's Eat!</h1>
+            </div>
+            <div class="menu">
+                <label for="checkbox" class="hamburger">
                         <input type="checkbox" id="checkbox">
                         <span class="line line-main"></span>
                         <span class="line line-split"></span>
                     </label>
-                </div>
-                <div class="content-container">
+            </div>
+            <div class="content-container">
                 <div class="content" id="c1">
-                    <div id="panel"> <a href="food.html" "><div class="button"> Street </div></a></div>
+                    <div id="panel">
+                        <a href="food.html">
+                            <div class="button"> Street </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="content" id="c2">
-                    <div id="panel"> <a href="family.html" "><div class="button"> Family </div></a></div>
+                <div class="content " id="c2">
+                    <div id="panel ">
+                        <a href="family.html">
+                            <div class="button"> Family </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="content" id="c3">
-                    <div id="panel"> <a href="coffee.html" "><div class="button"> Cafe </div></a></div>
+                    <div id="panel">
+                        <a href="coffee.html"><div class="button "> Cafe </div></a></div>
                 </div>
                 <div class="content" id="c4">
-                    <div id="panel"> <a href="index.html" "><div class="button"> Home </div></a></div>
+                    <div id="panel"> <a href="index.html"><div class="button"> Home </div></a></div>
+                </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            </nav>
-       </div>
+        </nav>
+    </div>
 
-<div class="main">
-<div class="container">
-    <div class="main-content" id="jakarta">
-        <h2> Jakarta </h2>
-        <div id="images">
-            <img id="img1" src="assets/coffee/jakarta/mayhaps.jpg">
-            <img id="img2" src="assets/coffee/jakarta/maple oak.jpg">
-            <img id="img3" src="assets/coffee/jakarta/coffee aya.jpg">
-        </div>
-        <div id="image-desc">
-            <div id="des1">
-                <h4> MayHaps </h4>
-                <p> Harga Reservasi: Rp50.000 per orang </p> 
+
+    <div class="main">
+        <div class="container">
+            <div class="main-content" id="jakarta">
+                <h2> Jakarta </h2>
+                <div id="images">
+                    <img id="img1" src="assets/food/jakarta/la-brasserie-restaurant.jpg">
+                    <img id="img2" src="assets/food/jakarta/labrasserie2jpg.jpg">
+                    <img id="img3" src="assets/food/jakarta/labrasserie3.jpg">
+                </div>
+                <div id="image-desc">
+                    <div id="des1">
+                        <h4> La Brasserie </h4>
+                        <p> Harga Reservasi: Rp150.000 per orang </p>
+                    </div>
+                    <div class="reservation-btn">
+                        <button onclick="changeHarga150()" class="reserve" id="btn1"> Reserve! </button>
+                    </div>
+                </div>
             </div>
-            <div class="reservation-btn">
-                <button onclick = "changeHarga()" class="reserve" id="btn1"> Reserve! </button>
-        </div>
+            <div class="main-content" id="bogor">
+                <h2> Bogor </h2>
+                <div id="images">
+                    <img id="img4" src="assets/food/bogor/rumahair.jpg">
+                    <img id="img5" src="assets/food/bogor/rumahair2.jpg">
+                    <img id="img6" src="assets/food/bogor/rumahair3.jpg">
+                </div>
+                <div id="image-desc">
+                    <div id="des1">
+                        <h4> Rumah Air </h4>
+                        <p> Harga Reservasi: Rp100.000 per orang </p>
+                    </div>
+                    <div class="reservation-btn">
+
+                        <button onclick = "changeHarga100()" class="reserve" id="btn2"> Reserve! </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-content" id="depok">
+                <h2> Depok </h2>
+                <div id="images">
+                    <img id="img7" src="assets/food/depok/waroengss.jpg">
+                    <img id="img8" src="assets/food/depok/waroengss2.jpg">
+                    <img id="img9" src="assets/food/depok/waroengss3.jpg">
+                </div>
+                <div id="image-desc">
+                    <div id="des1">
+                        <h4> Waroeng Ss </h4>
+                        <p> Harga Reservasi: Rp50.000 per orang </p>
+                    </div>
+                    <div class="reservation-btn">
+
+                        <button onclick = "changeHarga50()"class="reserve" id="btn3"> Reserve! </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-content" id="tangerang">
+                <h2> Tangerang </h2>
+                <div id="images">
+                    <img id="img10" src="assets/food/tangerang/kampoengaer.avif">
+                    <img id="img11" src="assets/food/tangerang/kampoengaer2.avif">
+                    <img id="img12" src="assets/food/tangerang/kampoengaer3.avif">
+                </div>
+                <div id="image-desc">
+                    <div id="des1">
+                        <h4> Kampoeng Aer </h4>
+                        <p> Harga Reservasi: Rp100.000 per orang </p>
+                    </div>
+                    <div class="reservation-btn">
+
+                        <button onclick = "changeHarga100()" class="reserve" id="btn4"> Reserve! </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-content" id="bekasi">
+                <h2> Bekasi </h2>
+                <div id="images">
+                    <img id="img13" src="assets/food/bekasi/bandardjakarta.jpg">
+                    <img id="img14" src="assets/food/bekasi/bandardjakarta2.jpg">
+                    <img id="img15" src="assets/food/bekasi/bandardjakarta3.jpg">
+                </div>
+                <div id="image-desc">
+                    <div id="des1">
+                        <h4> Bandar Djakarta </h4>
+                        <p> Harga Reservasi: Rp100.000 per orang </p>
+                    </div>
+                    <div class="reservation-btn">
+
+                        <button onclick = "changeHarga100()"class="reserve" id="btn5"> Reserve! </button>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="main-content" id="bogor">
-        <h2> Bogor </h2>
-        <div id="images">
-            <img id="img4" src="assets/coffee/bogor/Koba.jpg">
-            <img id="img5" src="assets/coffee/bogor/Koba2.jpg">
-            <img id="img6" src="assets/coffee/bogor/Koba3.jpg">
-        </div>
-        <div id="image-desc">
-            <div id="des1">
-                <h4> Koba </h4>
-                <p> Harga Reservasi: Rp50.000 per orang </p> 
-            </div>
-            <div class="reservation-btn">
-
-                <button class="reserve" id="btn2"> Reserve! </button>
-    
-        </div>
-        </div>
-    </div>
-    <div class="main-content" id="depok">
-        <h2> Depok </h2>
-        <div id="images">
-            <img id="img7" src="assets/coffee/depok/walkingdrums.jpg">
-            <img id="img8" src="assets/coffee/depok/nako.jpg">
-            <img id="img9" src="assets/coffee/depok/beranda.jpg">
-        </div>
-        <div id="image-desc">
-            <div id="des1">
-                <h4> The Walking Drums </h4>
-                <p> Harga Reservasi: Rp30.000 per orang </p> 
-            </div>
-            <div class="reservation-btn">
-
-                <button class="reserve" id="btn3"> Reserve! </button>
-
-        </div>
-        </div>
-    </div>
-    <div class="main-content" id="tangerang">
-        <h2> Tangerang </h2>
-        <div id="images">
-            <img id="img10" src="assets/coffee/tangerang/afterfriday.png">
-            <img id="img11" src="assets/coffee/tangerang/afterfriday2.jpg">
-            <img id="img12" src="assets/coffee/tangerang/afterfriday3.jpg">
-        </div>
-        <div id="image-desc">
-            <div id="des1">
-                <h4> Afterfriday </h4>
-                <p> Harga Reservasi: Rp40.000 per orang </p> 
-            </div>
-            <div class="reservation-btn">
-
-                <button class="reserve" id="btn4"> Reserve! </button>
-
-        </div>
-        </div>
-    </div>
-    <div class="main-content" id="bekasi">
-        <h2> Bekasi </h2>
-        <div id="images">
-            <img id="img13" src="assets/coffee/bekasi/Little-Talk-Coffee.jpg">
-            <img id="img14" src="assets/coffee/bekasi/littletalk2.jpg">
-            <img id="img15" src="assets/coffee/bekasi/littletalk3.jpg">
-        </div>
-        <div id="image-desc">
-            <div id="des1">
-                <h4> Little Talk </h4>
-                <p> Harga Reservasi: Rp40.000 per orang </p> 
-            </div>
-            <div class="reservation-btn">
-
-                <button class="reserve" id="btn5"> Reserve! </button>
-
-        </div>
-        </div>
-    </div>  
-</div>
-</div>
-       <div class="footer">
+    <div class="footer">
         <div class="icons">
             <a href="https://www.instagram.com/arfianojordhy/" class="icon icon--instagram" target="_blank">
-              <i class="ri-instagram-line"></i>
+                <i class="ri-instagram-line"></i>
             </a>
             <a href="https://www.twitter.com/ukinoshitty" class="icon icon--twitter" target="_blank">
-              <i class="ri-twitter-line"></i>
+                <i class="ri-twitter-line"></i>
             </a>
             <a href="https://wa.me/6289696078486" class="icon icon--whatsapp" target="_blank">
-              <i class="ri-whatsapp-line"></i>
+                <i class="ri-whatsapp-line"></i>
             </a>
             <a href="https://github.com/ukinon" class="icon icon--github" target="_blank">
-              <i class="ri-github-line"></i>
+                <i class="ri-github-line"></i>
             </a>
-          </div>
-       </div>
+        </div>
+    </div>
 
-       <div id="thankyou">
+    <div id="thankyou">
         <div id="thankyou-box">
-        <div class="thankyou-content">
-            <h3> Thank You!</h3>
-            <p>Your Order Has Been Reserved!</p> 
+            <div class="thankyou-content">
+                <h3> Thank You!</h3>
+                <p>Your Order Has Been Reserved!</p>
             </div>
         </div>
     </div>
-       <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

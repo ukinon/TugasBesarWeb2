@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Food</title>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="main.css">
@@ -15,7 +15,7 @@
     </script>
 
 <style>
-    #c3{
+    #c1{
         background-color: var(--background);
     }
 </style>
@@ -24,33 +24,34 @@
 <body>
     <div id="popup">
         <div id="backbtn">
-            <button> <h1>  X </h1> </button> 
+            <button> <h1>  X </h1> </button>
         </div>
         <div class="popup-content">
             <form action="" id="myform">
                 <div class="form-content">
-                <div id="reserve-date">
-                  <div>
-                    <label for="date">Tanggal : </label>
-                    <input type="date" name="date" id="date" required>
-                  </div>
-                </div>
-                <label for="nama">Nama : </label>
-                <input type="text" name="nama" id="nama" required>
-                <label for="kontak">Kontak : </label>
-                <input type="number" name="phone" id="phone" required>
-                <label for="customer">Untuk Berapa Orang?</label>
-                <input type="number" min="0" oninput="this.value = 
+                    <div id="reserve-date">
+                        <div>
+                            <label for="date">Date </label>
+                            <input type="date" name="date" id="date" required>
+                        </div>
+                    </div>
+                    <label for="nama"> Name: </label>
+                    <input type="text" name="nama" id="nama" required>
+                    <label for="kontak">Contact: </label>
+                    <input type="number" name="phone" id="phone" required>
+                    <label for="customer">Number of People: </label>
+                    <input type="number" min="0" oninput="this.value = 
                 !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" name="customer" id="customer" required>
-                <label for="total"> Total Harga : </label>
-                <input type="number" min="0" name="total" id="total" required>
-                <div class="reservation-btn">
-                    <input type="submit" value="Reserve!" id="submit-btn">
+                    <label for="total"> Total: </label>
+                    <input type="number" min="0" name="total" id="total" required>
+                    <div class="reservation-btn">
+                        <input type="submit" value="Reserve!" id="submit-btn">
+                    </div>
                 </div>
-            </div>
-              </form>
-            </div>
+            </form>
         </div>
+    </div>
+
   
     <div class="header">
         <nav>
@@ -84,93 +85,95 @@
     <div class="main-content" id="jakarta">
         <h2> Jakarta </h2>
         <div id="images">
-            <img id="img1" src="assets/coffee/jakarta/mayhaps.jpg">
-            <img id="img2" src="assets/coffee/jakarta/maple oak.jpg">
-            <img id="img3" src="assets/coffee/jakarta/coffee aya.jpg">
+            <img id="img1" src="assets/street/jakarta/angkringanJASMERAH.avif">
+            <img id="img2" src="assets/street/jakarta/angkringanJASMERAH2.jpg">
+            <img id="img3" src="assets/street/jakarta/angkringanJASMERAH3.avif">
         </div>
         <div id="image-desc">
             <div id="des1">
-                <h4> MayHaps </h4>
-                <p> Harga Reservasi: Rp50.000 per orang </p> 
+                <h4> Angkringan JASMERAH </h4>
+                <p> Kisaran Harga: kurang dari 75k perorang  </p> 
             </div>
             <div class="reservation-btn">
-                <button onclick = "changeHarga()" class="reserve" id="btn1"> Reserve! </button>
+                <a href="https://www.traveloka.com/id-id/restaurants/indonesia/detail/angkringan-jasmerah-makasar-74454" target="_blank">
+                <button class="angkringan" id="btn1"> More Info </button>
+            </a>
         </div>
         </div>
     </div>
     <div class="main-content" id="bogor">
         <h2> Bogor </h2>
         <div id="images">
-            <img id="img4" src="assets/coffee/bogor/Koba.jpg">
-            <img id="img5" src="assets/coffee/bogor/Koba2.jpg">
-            <img id="img6" src="assets/coffee/bogor/Koba3.jpg">
+            <img id="img4" src="assets/street/Bogor/angkringanmancur.jpg">
+            <img id="img5" src="assets/street/Bogor/angkringanmancur2.jpg">
+            <img id="img6" src="assets/street/Bogor/angkringanmancur3.jpg">
         </div>
         <div id="image-desc">
             <div id="des1">
-                <h4> Koba </h4>
-                <p> Harga Reservasi: Rp50.000 per orang </p> 
+                <h4> Angkringan Mancur </h4>
+                <p> Kisaran Harga: kurang dari 75k per orang </p> 
             </div>
             <div class="reservation-btn">
-
-                <button class="reserve" id="btn2"> Reserve! </button>
-    
+                <a href="https://www.instagram.com/accounts/login/?next=/angkringan.mancur/" target="_blank">
+                <button class="angkringan" id="btn2"> More Info </button>
+            </a>
         </div>
         </div>
     </div>
     <div class="main-content" id="depok">
         <h2> Depok </h2>
         <div id="images">
-            <img id="img7" src="assets/coffee/depok/walkingdrums.jpg">
-            <img id="img8" src="assets/coffee/depok/nako.jpg">
-            <img id="img9" src="assets/coffee/depok/beranda.jpg">
+            <img id="img7" src="assets/street/Depok/panjerwangi.webp">
+            <img id="img8" src="assets/street/Depok/panjerwangi2.webp">
+            <img id="img9" src="assets/street/Depok/panjerwangi3.webp">
         </div>
         <div id="image-desc">
             <div id="des1">
-                <h4> The Walking Drums </h4>
-                <p> Harga Reservasi: Rp30.000 per orang </p> 
+                <h4> Angkringan Panjerwengi </h4>
+                <p> Kisaran Harga: kurang dari 50k per orang </p> 
             </div>
             <div class="reservation-btn">
-
-                <button class="reserve" id="btn3"> Reserve! </button>
-
+                <a href="https://www.traveloka.com/id-id/restaurants/indonesia/detail/angkringan-panjerwengi-40483/photos?category=AMBIENCE" target="_blank">
+                <button class="angkringan" id="btn3"> More Info </button>
+            </a>
         </div>
         </div>
     </div>
     <div class="main-content" id="tangerang">
         <h2> Tangerang </h2>
         <div id="images">
-            <img id="img10" src="assets/coffee/tangerang/afterfriday.png">
-            <img id="img11" src="assets/coffee/tangerang/afterfriday2.jpg">
-            <img id="img12" src="assets/coffee/tangerang/afterfriday3.jpg">
+            <img id="img10" src="assets/street/Tangerang/81.jpeg">
+            <img id="img11" src="assets/street/Tangerang/81-2.jpg">
+            <img id="img12" src="assets/street/Tangerang/81-3.jpeg">
         </div>
         <div id="image-desc">
             <div id="des1">
-                <h4> Afterfriday </h4>
-                <p> Harga Reservasi: Rp40.000 per orang </p> 
+                <h4> Angkringan 81 </h4>
+                <p> Kisaran Harga: kurang dari 30k per orang </p> 
             </div>
             <div class="reservation-btn">
-
-                <button class="reserve" id="btn4"> Reserve! </button>
-
+                <a href="https://www.kompasiana.com/andridoang1170/60e8791a1525104a554cc862/angkringan-81-jajanan-favorit-para-kaula-muda-di-kota-tangerang" target="_blank">
+                <button class="angkringan" id="btn4"> More Info </button>
+            </a>
         </div>
         </div>
     </div>
     <div class="main-content" id="bekasi">
         <h2> Bekasi </h2>
         <div id="images">
-            <img id="img13" src="assets/coffee/bekasi/Little-Talk-Coffee.jpg">
-            <img id="img14" src="assets/coffee/bekasi/littletalk2.jpg">
-            <img id="img15" src="assets/coffee/bekasi/littletalk3.jpg">
+            <img id="img13" src="assets/street/Bekasi/bekasi.jpg">
+            <img id="img14" src="assets/street/Bekasi/bekasi2.jpg">
+            <img id="img15" src="assets/street/Bekasi/bekasi3.jpg">
         </div>
         <div id="image-desc">
             <div id="des1">
-                <h4> Little Talk </h4>
-                <p> Harga Reservasi: Rp40.000 per orang </p> 
+                <h4> Angkringan Tepi Sawah Setu Bekasi </h4>
+                <p> Kisaran Harga: kurang dari 50k per orang </p> 
             </div>
             <div class="reservation-btn">
-
-                <button class="reserve" id="btn5"> Reserve! </button>
-
+                <a href="https://travelandword.com/2022/02/13/angkringan-tepi-sawah-setu-bekasi/" target="_blank">
+                <button class="angkringan" id="btn5"> More Info </button>
+            </a>
         </div>
         </div>
     </div>  
